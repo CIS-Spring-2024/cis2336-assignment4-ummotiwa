@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="../CSS folder/confirm.css">
+</head>
+
+<body>
+    <div class="card">
+        <img class="hero-image" src="../Images folder/hero.png" alt="hero" />
+        <div class="container">
+            <h2 class="title">Order Summary</h2>
+            <p class="order-description">Thank you for your order. You will receive an email confirmation shortly.
+            </p>
+            <div class="order-details">
+                <ul class="order-list" id="orderList">
+                  <!-- Order items will be dynamically added here -->
+                </ul>
+              </div>
+
+            <div class="plan-container">
+                <!-- adress and total -->
+                <strong>Address:</strong> <span id="address"></span><br> <!-- Display address -->
+                <div class="plan-description">
+                    
+                    <strong>Total:</strong> $ <span id="total"></span> <!-- Display total -->
+                    </div>
+            </div>
+
+            <button class="proceed-button"
+            onclick="alert('Payment Successful!')"> <!-- Alert message for payment -->
+            Proceed to Payment</button>
+
+            <button class="cancel-button"
+            onclick="window.location='/'">
+            Cancel Order</button>
+        </div>
+    </div>
+<script src="../Javascript/fetchOrders.js"></script>
+</body>
+</html>
